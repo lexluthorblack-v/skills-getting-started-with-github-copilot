@@ -6,7 +6,7 @@ from src.app import app, activities
 client = TestClient(app)
 
 
-def test_basic_get(some_activity=None):
+def test_basic_get():
     resp = client.get("/activities")
     assert resp.status_code == 200
 
